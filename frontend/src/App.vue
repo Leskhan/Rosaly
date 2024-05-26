@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import Button from 'primevue/button';
-import './assets/index.css';
-import 'primevue/resources/themes/lara-light-indigo/theme.css';
-import 'primevue/resources/primevue.min.css';
-import 'primeicons/primeicons.css';
+import VMenubar from "@/components/features/Menubar.vue";
 
 </script>
 
 <template>
-  <div class="tw-text-3xl tw-font-bold tw-underline">
-    Hello world!
-    <Button label="ЖЖВ" />
-  </div>
+  <v-menubar>
+
+  </v-menubar>
+  <router-view></router-view>
 </template>
 
 <style scoped>
