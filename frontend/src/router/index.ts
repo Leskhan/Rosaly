@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 
 const routes = [
   {
@@ -6,13 +6,13 @@ const routes = [
     component: () => import('../components/pages/Main.vue')
   },
   {
-    path: '/goods',
-    component: () => import('../components/pages/Goods.vue')
+    path: '/products',
+    component: () => import('../components/pages/Products.vue')
   },
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 

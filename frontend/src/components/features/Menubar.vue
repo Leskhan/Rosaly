@@ -15,9 +15,9 @@ const items = ref([
   },
   {
     label: 'Товары',
-    icon: 'pi pi-home',
+    icon: 'pi pi-shopping-bag',
     command: () => {
-      router.push('/goods');
+      router.push('/products');
     }
   },
 ]);
@@ -27,7 +27,7 @@ const items = ref([
   <div>
     <Menubar :model="items">
       <template #item="{ item, props }">
-        <a v-ripple :href="item.url" :target="item.target" v-bind="props.action">
+        <a :href="item.url" :target="item.target" v-bind="props.action">
           <span :class="item.icon" />
           <span class="tw-ml-[10px]">{{ item.label }}</span>
         </a>

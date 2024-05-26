@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    GOODS!
+    Products!
   </div>
 </template>
 
